@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/citySelectionTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="@string/city"
+        android:paddingBottom="10dp"
+        app:endIconMode="dropdown_menu">
+
+        <AutoCompleteTextView
+            android:id="@+id/cityAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:lines="1"
+            android:labelFor="@id/cityAutoComplete"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:imeOptions="actionDone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/forecastRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="vertical"/>
+</LinearLayout>

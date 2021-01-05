@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">weatherForecast</string>
+    <string name="title_activity_main_page">mainPage</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="condition">Condition</string>
+    <string name="_50">50\'</string>
+    <string name="_60">60\'</string>
+    <string name="_40">40\'</string>
+</resources>
